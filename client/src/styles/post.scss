@@ -1,0 +1,77 @@
+.post {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  color: #fff !important;
+  box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.4);
+  // transition: transform 0.5s ease-in-out linear;
+
+  // &:hover {
+  //   transform: scale(1.5);
+  //   z-index: 10000;
+  // }
+
+  &__mediaUrl {
+    max-width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__caption {
+    font-size: 1.5rem;
+  }
+
+  &__user {
+    font-size: 1.4rem;
+    margin-right: 10px;
+    color: #fff;
+  }
+
+  &__user__url {
+    width: 30px;
+    border-radius: 50%;
+  }
+
+  &__description__container {
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    font-size: 1.3rem;
+  }
+
+  &__comments__views > div:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &__time {
+    font-size: 12px;
+    font-style: italic;
+    margin-right: 2rem;
+  }
+
+  &__comment,
+  &__views {
+    font-size: 1.2rem;
+    margin-left: 8px;
+  }
+
+  &__modalheader {
+    background-color: #000 !important;
+    border: none !important;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    padding-bottom: 2rem !important;
+    padding-top: 1rem !important;
+  }
+
+  &__modalbody {
+    padding: 0 1.5rem 2rem 1.5rem !important;
+  }
+
+  &__modal__closebtn {
+    font-size: 20px;
+    cursor: pointer;
+  }
+}

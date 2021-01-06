@@ -1,0 +1,43 @@
+@import './styles/main.scss';
+
+.indexpage__herobanner {
+  width: 90%;
+  margin: 5rem auto 0 auto;
+  img {
+    width: 100%;
+  }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  &:hover {
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  grid-auto-rows: auto;
+  column-gap: 2rem;
+  row-gap: 2rem;
+
+  @media (max-width: 1110px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}
+
+// on smaller screen it has to be 1fr 1fr or more
+.events {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  column-gap: 2rem;
+  row-gap: 2rem;
+}

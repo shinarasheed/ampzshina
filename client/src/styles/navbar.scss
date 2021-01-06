@@ -1,0 +1,71 @@
+// @import '../styles/main.scss';
+
+.navigation {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem 7rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.navigation a:hover {
+  color: #fff;
+}
+
+.navigation__logo {
+  margin-right: 10rem;
+}
+
+.navigation section {
+  display: flex;
+  align-items: center;
+}
+
+.navigation article {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex: 1;
+}
+
+.navigation__link a:not(:last-child) {
+  margin-right: 8rem;
+}
+
+.navigation__post__auth {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__authlink a {
+  margin-left: 3rem;
+}
+
+.navigation__posticon {
+  cursor: pointer;
+}
+
+.navigation__authlink-signup {
+  background: #fff;
+  color: #000 !important;
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.navigation input {
+  padding: 1.2rem 10rem 1.2rem 1rem;
+  border-radius: 6px;
+  margin-left: 10rem;
+  border: none;
+  background-color: #353535;
+  outline: none !important;
+
+  &::placeholder {
+    font-size: 1.5rem;
+  }
+}
