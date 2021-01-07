@@ -15,7 +15,8 @@ class AuthValidator {
    */
   static validateData() {
     return [
-      check('name').not().isEmpty().withMessage('name is required'),
+      check('fullName').not().isEmpty().withMessage('fullName is required'),
+      check('userName').not().isEmpty().withMessage('userName is required'),
       check('email')
         .not()
         .isEmpty()
@@ -23,6 +24,21 @@ class AuthValidator {
         .isEmail()
         .withMessage('enter a valid email address'),
       check('password').not().isEmpty().withMessage('password is required'),
+      check('gender').not().isEmpty().withMessage('gender is required'),
+      check('country').not().isEmpty().withMessage('country is required'),
+      check('dayOfBirth')
+        .not()
+        .isEmpty()
+        .withMessage('day of birth is required'),
+      check('monthOfBirth')
+        .not()
+        .isEmpty()
+        .withMessage('month of birth is required'),
+      check('yearOfBirth')
+        .not()
+        .isEmpty()
+        .withMessage('month of birth is required'),
+      check('role').not().isEmpty().withMessage('role is required'),
     ];
   }
 
