@@ -15,7 +15,7 @@ const Login = ({ setStep }) => {
         <p>Login with your Email or Username</p>
       </div>
       <div className="mb-3">
-        <Input type="email" placeholder="Email/Username" />
+        <Input type="email" placeholder="Email or Username" />
       </div>
       <div className="mb-3">
         <Input type="password" placeholder="password" />

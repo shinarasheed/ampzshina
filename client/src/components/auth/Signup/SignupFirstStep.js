@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 import { Input, Button } from '../../Globals/styledcomponents';
 
-const SignupFirstStep = ({ setStep }) => {
+const SignupFirstStep = ({ setStep, data, handleOnchange }) => {
+  const { fullName, userName, password, email } = data;
+
   return (
     <>
       <div className="form__header">
@@ -15,16 +17,40 @@ const SignupFirstStep = ({ setStep }) => {
         <p>Sign up with your Email</p>
       </div>
       <div className="mb-3">
-        <Input type="text" placeholder="FullName" />
+        <Input
+          onChange={handleOnchange}
+          name="fullName"
+          value={fullName}
+          type="text"
+          placeholder="FullName"
+        />
       </div>
       <div className="mb-3">
-        <Input type="text" placeholder="Username" />
+        <Input
+          onChange={handleOnchange}
+          name="userName"
+          value={userName}
+          type="text"
+          placeholder="Username"
+        />
       </div>
       <div className="mb-3">
-        <Input type="password" placeholder="password" />
+        <Input
+          onChange={handleOnchange}
+          name="password"
+          value={password}
+          type="password"
+          placeholder="password"
+        />
       </div>
       <div className="mb-3">
-        <Input type="email" placeholder="Email" />
+        <Input
+          onChange={handleOnchange}
+          name="email"
+          value={email}
+          type="email"
+          placeholder="Email"
+        />
       </div>
       <div className="mb-3">
         <Button onClick={() => setStep('secondStep')}>Continue</Button>
