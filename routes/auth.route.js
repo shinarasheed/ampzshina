@@ -18,5 +18,7 @@ router.post(
   phoneNumberExist,
   AuthController.registerUser
 );
+router.post('/login', AuthController.loginUser);
+router.get('/user', verifyToken, AuthController.getAuthUser);
 
 module.exports = router;

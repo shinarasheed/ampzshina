@@ -48,6 +48,22 @@ phoneNumberExist = async (req, res, next) => {
   }
 };
 
+invalidEmail = async (req, res, next) => {
+  const { email } = req.body;
+  try {
+    const user = await User.findOne({ email });
+    if (!user) {
+      return res
+        .status(400)
+        .json({ status: 'error', error: 'invalid credential' });
+    }
+
+    next();
+  } catch (error) {
+    console.log(error.message);
+  }
+};
+
 module.exports = {
   userNameExist,
   emailExist,

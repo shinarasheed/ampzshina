@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import LoginForm from './Login';
+import Index from './index';
 import '../../../styles/navbar.scss';
 import '../../../styles/signupmodal.scss';
 
@@ -14,13 +14,13 @@ const SignupModal = (props) => {
 
   return (
     <div>
-      <Link onClick={toggle} className="navigation__authlink-login" to="#!">
+      <Link onClick={toggle} className="navigation__authlink-login" to="/">
         {buttonLabel}
       </Link>
       <Modal centered isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>Signup</ModalHeader>
+        <ModalHeader toggle={toggle}>Login</ModalHeader>
         <ModalBody>
-          <LoginForm />
+          <Index />
         </ModalBody>
         <ModalFooter>
           <p>footer</p>

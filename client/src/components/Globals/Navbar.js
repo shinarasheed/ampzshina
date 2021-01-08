@@ -5,8 +5,8 @@ import brandlogo from '../../assets/img/home/logowhite.png';
 import posticon from '../../assets/img/home/posticon.png';
 import '../../styles/navbar.scss';
 import Searchbar from './Searchbar';
-import SignupModal from '../auth/Signup/SignupModal';
-import LoginModal from '../auth/Login/LoginModal';
+import SignupModal from '../auth/Signup/Modal';
+import LoginModal from '../auth/Login/Modal';
 
 const Navigation = () => {
   return (
